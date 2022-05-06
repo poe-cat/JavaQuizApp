@@ -1,12 +1,13 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #738bdc;
-    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -26,10 +27,4 @@ tr {
 
 th, td {
 	padding: 10px;
-}
-
-footer {
-	height: 80px;
-	text-align: center;
-	line-height: 80px;
 }

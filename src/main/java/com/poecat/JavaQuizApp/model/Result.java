@@ -17,15 +17,17 @@ public class Result {
     private int id;
     private String username;
     private int totalCorrect = 0;
+    private double percent;
 
     public Result() {
     }
 
-    public Result(int id, String username, int totalCorrect) {
+    public Result(int id, String username, int totalCorrect, double percent) {
         super();
         this.id = id;
         this.username = username;
         this.totalCorrect = totalCorrect;
+        this.percent = percent;
     }
 
     public int getId() {
@@ -52,4 +54,21 @@ public class Result {
         this.totalCorrect = totalCorrect;
     }
 
+    public double getPercent() {
+        return percent;
+    }
+
+    public void setPercent(double percent) {
+        this.percent = percent;
+    }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", totalCorrect=" + totalCorrect +
+                ", percent=" + percent +
+                '}';
+    }
 }
