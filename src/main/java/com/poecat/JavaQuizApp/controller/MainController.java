@@ -4,6 +4,7 @@ import com.poecat.JavaQuizApp.model.Result;
 import com.poecat.JavaQuizApp.service.QuestionForm;
 import com.poecat.JavaQuizApp.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.CurrentSecurityContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,10 +31,12 @@ public class MainController {
         return "index";
     }
 
+
     @ModelAttribute("result")
     public Result getResult() {
         return result;
     }
+
 
     @PostMapping("/quiz")
     public String quiz(@RequestParam String username, Model m, RedirectAttributes ra) {
@@ -50,6 +53,7 @@ public class MainController {
 
         return "quiz.html";
     }
+
 
     @PostMapping("/submit")
     public String submit(@ModelAttribute QuestionForm qForm, Model m) {

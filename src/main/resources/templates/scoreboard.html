@@ -21,12 +21,10 @@
 		
 		<table class="table table-hover table-dark">
 			<tr>
-				<th>#</th>
 				<th>Name</th>
 				<th>Score</th>
 			</tr>
 			<tr th:each="score : ${sList}">
-				<td th:text="${score.id}"></td>
 				<td th:text="${score.username}"></td>
 				<td th:text="${score.totalCorrect}"></td>
 			</tr>
