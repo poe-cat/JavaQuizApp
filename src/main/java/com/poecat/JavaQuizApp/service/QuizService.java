@@ -70,4 +70,8 @@ public class QuizService {
 
         return sList;
     }
+
+    public void saveQuestion(Question question) {
+        questionRepository.save(question);
+    }
 }

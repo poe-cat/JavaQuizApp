@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User panel</title>
+</head>
+<body>
+
+<h1>Add new question:</h1>
+
+<form action="#" th:action="@{/saveQuestion}" th:object="${question}" method="POST">
+    <input type="text" th:field="*{title}" placeholder="Your question: " class="form-control mb-4 col-4">
+
+    <input type="text" th:field="*{optionA}" placeholder="Option A: " class="form-control mb-4 col-4">
+
+    <input type="text" th:field="*{optionB}" placeholder="Option B: " class="form-control mb-4 col-4">
+
+    <input type="text" th:field="*{optionC}" placeholder="Option C: " class="form-control mb-4 col-4">
+
+    <input type="text" th:field="*{answer}" placeholder="Correct answer: " class="form-control mb-4 col-4">
+
+    <button type="submit" class="btn btn-info col-2">Save your question</button>
+</form>
+
+
+</body>
+</html>

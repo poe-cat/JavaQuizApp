@@ -43,11 +43,19 @@ body {
 
 .image-box img {
 	width: 100%;
-	max-width: 450px;
+    animation: animate 7s linear infinite;
 }
 
-.image-box:hover img {
-    transform: scale(1.0);
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(50px);
+    }
+    50%
+    {
+        transform: translateY(100px);
+    }
 }
 
 .text-box {
