@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
+import com.sun.istack.NotNull;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,11 +19,22 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int quesId;
+
+    @NotEmpty
+    @Size(min = 10)
     private String title;
+
+    @NotEmpty
     private String optionA;
+
+    @NotEmpty
     private String optionB;
+
+    @NotEmpty
     private String optionC;
+
     private int answer;
+
     private int choice;
 
     public Question() {

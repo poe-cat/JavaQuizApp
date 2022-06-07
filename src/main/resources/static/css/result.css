@@ -10,6 +10,9 @@
 body {
 	width: 100%;
 	overflow-x: hidden;
+		background: url("https://images.pexels.com/photos/4040119/pexels-photo-4040119.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+                  no-repeat;
+              background-size: cover;
 }
 
 .main-container {
@@ -27,7 +30,7 @@ body {
 
 img {
 	width: 100%;
-	max-width: 350px;
+	max-width: 500px;
 	position: relative;
 	display: block;
 	margin: -180px auto 50px auto;
@@ -35,4 +38,8 @@ img {
 
 .card button {
 	width: 45%;
+}
+
+.a {
+   font-size: 9;
 }

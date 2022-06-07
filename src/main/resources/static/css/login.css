@@ -31,8 +31,14 @@ body{
 
 .img-left {
   width: 45%;
-  background: url("/images/img.jpg") center;
+  background: url("/images/yogjakarta.jpg") center;
   background-size: cover;
+}
+
+.img-left-2 {
+   width: 45%;
+   background: url("/images/carJava.jpg") center;
+   background-size: cover;
 }
 
 .card-body {
@@ -101,6 +107,10 @@ body{
 
 .form-box button[type="submit"]:hover {
   background: #0069d9;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .forget-link, .register-link {

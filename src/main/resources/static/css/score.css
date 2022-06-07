@@ -10,6 +10,9 @@
 body {
 	width: 100%;
 	overflow-x: hidden;
+	background: url("https://images.pexels.com/photos/4040119/pexels-photo-4040119.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+              no-repeat;
+          background-size: cover;
 }
 
 .main-container {
