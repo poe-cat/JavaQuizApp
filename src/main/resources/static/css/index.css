@@ -190,8 +190,17 @@ body {
 	margin-top: -37px;
 }
 
-.a {
-    font-size: 9;
+#lowerleft {
+    margin-bottom: 1px;
+    margin-left : 5px;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+#lowerleft a {
+    color: #fff;
 }
 
 

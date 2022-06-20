@@ -118,9 +118,20 @@ body{
   font-weight: bold;
 }
 
+.home-link {
+    color: #006400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .forget-link:hover, .register-link:hover {
   color: #0069d9;
   text-decoration: none;
+}
+
+.home-link:hover {
+    color: #556B2F;
+    text-decoration: none;
 }
 
 .form-box .btn-social {

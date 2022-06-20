@@ -14,7 +14,6 @@ public class UserController {
 
     @Autowired
     UserRepository userRepository;
-
     @Autowired
     public BCryptPasswordEncoder passwordEncoder;
 

@@ -25,18 +25,15 @@ public class MainController {
 
     public boolean submitted = false;
 
-
     @GetMapping("/")
     public String showHomePage() {
         return "index";
     }
 
-
     @ModelAttribute("result")
     public Result getResult() {
         return result;
     }
-
 
     @PostMapping("/quiz")
     public String quiz(@RequestParam String username, Model m, RedirectAttributes ra) {
@@ -53,7 +50,6 @@ public class MainController {
 
         return "quiz.html";
     }
-
 
     @PostMapping("/submit")
     public String submit(@ModelAttribute QuestionForm qForm, Model m) {
