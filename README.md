@@ -32,7 +32,8 @@ In application.properties (/resources/) enter your database url, your MySQL pass
 
 Example:
 
-```spring.datasource.url = jdbc:mysql://localhost:3306/your_database?createDatabaseIfNotExist=true
+```
+spring.datasource.url = jdbc:mysql://localhost:3306/your_database?createDatabaseIfNotExist=true
 spring.datasource.username = root
 spring.datasource.password = password
 ```
