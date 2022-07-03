@@ -8,7 +8,7 @@
 * [Live](#live)
 
 ## General info
-In this app users can test their knowledge of Java basics. After giving your name, the quiz asks ypu 10 questions. For each only one answer is correct. After submit you'll see your score, you can also check out top scores.
+In this app users can test their knowledge of Java basics. After giving your name, the quiz asks you 10 questions. For each only one answer is correct. After submit you'll see your score, you can also check out top scores.
 Additionaly, authenticated users can add their own questions to quiz. User's question will display randomly next time the quiz is taken. 
 
 ## Technologies
@@ -50,7 +50,7 @@ Alternatively, you can use the Spring Boot Maven plugin:
 
 ## Live 
 
-Application has been deployed on Heroku. To see how it works live, go to https://java-quiz-poe-cat.herokuapp.com/ .
+Application has been deployed to Heroku. To see how it works live, go to https://java-quiz-poe-cat.herokuapp.com/ .
 
 ![javaquiz](https://user-images.githubusercontent.com/84228264/177038436-778d4610-e075-4dce-b5d8-5529f0e7bab9.png)
 
