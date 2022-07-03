@@ -22,7 +22,8 @@ Project is created with:
 The project includes the Maven wrapper, so there is no need to install Maven to run the app. Run MySQL server. You need to import App data from **data.sql** file (directory: /resources/ ). 
 
 ### Command line MySQL import
-Type: mysql -u username -p database_name < data.sql
+Type: 
+```mysql -u username -p database_name < data.sql```
 The username refers to your MySQL username.
 database_name refers to the database you want to import.
 If you've assigned a password, type it and press Enter.
@@ -31,18 +32,27 @@ If you've assigned a password, type it and press Enter.
 In application.properties (/resources/) enter your database url, your MySQL password and username.
 
 Example:
-
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/your_database?createDatabaseIfNotExist=true
 spring.datasource.username = root
 spring.datasource.password = password
 ```
 
+## Running the application locally
+
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the com.poecat.JavaQuizApp.JavaQuizAppApplication class from your IDE.
+
+Alternatively, you can use the Spring Boot Maven plugin:
+
+```mvn spring-boot:run```
+
+
 ## Live 
+
+Application has been deployed on Heroku. To see how it works live, go to https://java-quiz-poe-cat.herokuapp.com/ .
 
 ![javaquiz](https://user-images.githubusercontent.com/84228264/177038436-778d4610-e075-4dce-b5d8-5529f0e7bab9.png)
 
-Go to https://java-quiz-poe-cat.herokuapp.com/ to see how it works. 
-You can register as a new user or use existing user's credentials: 
+You can register there as a new user or use existing user's credentials: 
 **email@wp.pl** for username and 
-**passing123** for password :shipit:
+**passing123** for password :shipit: .
