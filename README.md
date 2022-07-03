@@ -19,7 +19,23 @@ Project is created with:
 * MySQL version: 8.0
 
 ## Setup
-To run this project, install it locally..........
+The project includes the Maven wrapper, so there is no need to install Maven to run the app. Run MySQL server. You need to import App data from **data.sql** file (directory: /resources/ ). 
+
+### Command line MySQL import
+Type: mysql -u username -p database_name < data.sql
+The username refers to your MySQL username.
+database_name refers to the database you want to import.
+If you've assigned a password, type it and press Enter.
+
+### application.properties
+In application.properties (/resources/) enter your database url, your MySQL password and username.
+
+Example:
+
+```spring.datasource.url = jdbc:mysql://localhost:3306/your_database?createDatabaseIfNotExist=true
+spring.datasource.username = root
+spring.datasource.password = password
+```
 
 ## Live 
 
