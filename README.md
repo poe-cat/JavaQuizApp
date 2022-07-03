@@ -4,7 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Running the application locally](#local)
+* [Running the application locally](#running-the-application-locally)
 * [Live](#live)
 
 ## General info
@@ -57,3 +57,6 @@ Application has been deployed to Heroku. To see how it works live, go to https:/
 You can register there as a new user or use existing user's credentials: 
 **email@wp.pl** for username and 
 **passing123** for password :shipit: .
+
+## Credits
+<a href="https://www.freepik.com/psd/3d-woman">3d woman psd created by freepik - www.freepik.com</a>
