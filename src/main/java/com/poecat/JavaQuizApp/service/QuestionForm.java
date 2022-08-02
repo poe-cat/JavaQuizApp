@@ -17,9 +17,9 @@ public class QuestionForm {
         this.questionRepository = questionRepository;
     }
 
-    List<Question> getAllQuestions() {
-        return new ArrayList<>(questionRepository.getAllQuestions());
-    }
+    //List<Question> getAllQuestions() {
+    //    return new ArrayList<>(questionRepository.getAllQuestions());
+    //}
 
     public List<Question> getQuestions() {
         return questions;
