@@ -22,6 +22,17 @@ public class User {
     @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
 
+    public User() {
+    }
+
+    public User(Long id, String email, String password, String firstName, String lastName) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -35,7 +46,11 @@ public class User {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        if(email.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$")) {
+            this.email = email;
+        } else {
+            throw new IllegalArgumentException("Wrong email format");
+        }
     }
 
     public String getPassword() {
