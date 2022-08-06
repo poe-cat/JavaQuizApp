@@ -4,7 +4,6 @@ import com.poecat.JavaQuizApp.model.Question;
 import com.poecat.JavaQuizApp.repository.QuestionRepository;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -16,10 +15,6 @@ public class QuestionForm {
     public QuestionForm(QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
-
-    //List<Question> getAllQuestions() {
-    //    return new ArrayList<>(questionRepository.getAllQuestions());
-    //}
 
     public List<Question> getQuestions() {
         return questions;
