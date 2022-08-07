@@ -37,6 +37,7 @@ public class MainController {
 
     @PostMapping("/quiz")
     public String quiz(@RequestParam String username, Model m, RedirectAttributes ra) {
+
         if(username.equals("")) {
             ra.addFlashAttribute("warning", "You must enter your name first!");
             return "redirect:/";
@@ -53,6 +54,7 @@ public class MainController {
 
     @PostMapping("/submit")
     public String submit(@ModelAttribute QuestionForm qForm, Model m) {
+
         if(!submitted) {
             result.setTotalCorrect(qService.getResult(qForm));
             result.setPercent((qService.getResult(qForm)) * 100.0 / qService.questionsOnPage);
