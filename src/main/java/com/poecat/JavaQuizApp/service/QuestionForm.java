@@ -5,6 +5,7 @@ import com.poecat.JavaQuizApp.repository.QuestionRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class QuestionForm {
@@ -22,5 +23,10 @@ public class QuestionForm {
 
     public void setQuestions(List<Question> questions) {
         this.questions = questions;
+    }
+
+    public List<Question> getAllQuestions() {
+        return questionRepository.getAllQuestions().stream()
+                .collect(Collectors.toList());
     }
 }

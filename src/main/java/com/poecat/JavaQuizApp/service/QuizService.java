@@ -28,6 +28,10 @@ public class QuizService {
 
     public final double questionsOnPage = 10;
 
+    public QuizService(QuestionRepository questionRepository) {
+        this.questionRepository = questionRepository;
+    }
+
     public QuestionForm getQuestions() {
         List<Question> allQues = questionRepository.findAll();
         List<Question> qList = new ArrayList<Question>();
@@ -43,6 +47,10 @@ public class QuizService {
         questionForm.setQuestions(qList);
 
         return questionForm;
+    }
+
+    public Question getSingleQuestionById(int quesId) {
+        return questionRepository.getById(quesId);
     }
 
     public int getResult(QuestionForm qForm) {

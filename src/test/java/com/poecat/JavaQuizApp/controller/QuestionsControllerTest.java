@@ -1,19 +1,9 @@
 package com.poecat.JavaQuizApp.controller;
 
-import org.junit.jupiter.api.Test;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
+@MockitoSettings(strictness = Strictness.STRICT_STUBS)
 public class QuestionsControllerTest {
 
-    @Test
-    public void shouldShowNewQuestionForm() {
-
-        //given
-        QuestionsController questionsController = mock(QuestionsController.class);
-
-        //when
-
-    }
 }

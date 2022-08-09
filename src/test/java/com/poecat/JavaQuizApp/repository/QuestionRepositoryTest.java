@@ -19,17 +19,14 @@ public class QuestionRepositoryTest {
 
     private Question question;
 
-    @BeforeEach
-    void initializeQuestion() {
-        question = new Question(11, "What is your name, Judith?",
-                "Judith", "Elaine", "Margery", 1, 1);
-    }
 
     @Test
     @Rollback(false)
-    public void shouldCreateNewQuestion() {
+    public void shouldSaveNewQuestion() {
+
+        question = new Question(11, "What is your name, Judith?",
+                "Judith", "Elaine", "Margery", 1, 1);
 
         assertThat(question.getQuesId()).isGreaterThan(0);
     }
-
 }
