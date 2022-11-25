@@ -55,7 +55,7 @@ Application has been deployed to AWS. To see how it works live, go to http://jav
 ![javaquiz](https://user-images.githubusercontent.com/84228264/177038436-778d4610-e075-4dce-b5d8-5529f0e7bab9.png)
 
 You can register there as a new user or use existing user's credentials: 
-**email@wp.pl** for username and 
+**timi@email.com** for username and 
 **passing123** for password :shipit: .
 
 ## Credits
