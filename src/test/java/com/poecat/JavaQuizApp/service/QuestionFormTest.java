@@ -2,49 +2,36 @@ package com.poecat.JavaQuizApp.service;
 
 import com.poecat.JavaQuizApp.model.Question;
 import com.poecat.JavaQuizApp.repository.QuestionRepository;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasSize;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class QuestionFormTest {
+class QuestionFormTest {
 
-    @InjectMocks
-    private QuizService quizService;
     @Mock
     private QuestionRepository questionRepository;
 
-    private Question question1, question2;
+    @InjectMocks
+    private QuestionForm questionForm;
 
-    @BeforeEach
-    void initializeQuestion() {
-        Question question1 = new Question(11, "What is your name, Judith?",
-                "Judith", "Elaine", "Margery", 1, 1);
-        Question question2 = new Question(12, "What test should be created next?",
-                "Integration", "Unit", "Both", 3, 1);
+    @Test
+    void testGetQuestions() {
+        List<Question> testQuestions = Arrays.asList(new Question(), new Question());
+        questionForm.setQuestions(testQuestions);
+        assertEquals(testQuestions, questionForm.getQuestions());
     }
 
     @Test
-    public void shouldSetQuestionList() {
-        //given
-        QuestionForm questionForm = new QuestionForm(questionRepository);
-        List<Question> questionList = new ArrayList<>();
-
-        //then
-        questionList.add(question1);
-        questionList.add(question2);
-        questionForm.setQuestions(questionList);
-
-        //then
-        assertThat(questionForm.getQuestions(), hasSize(2));
+    void testGetAllQuestions() {
+        List<Question> testQuestions = Arrays.asList(new Question(), new Question());
+        when(questionRepository.findAll()).thenReturn(testQuestions);
+        assertEquals(testQuestions, questionForm.getAllQuestions());
     }
 }

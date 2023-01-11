@@ -74,9 +74,7 @@ public class QuizService {
 
     public List<Result> getTopScore() {
 
-        List<Result> sList = resultRepository.findAll(Sort.by(Sort.Direction.DESC, "totalCorrect"));
-
-        return sList;
+        return resultRepository.findAll(Sort.by(Sort.Direction.DESC, "totalCorrect"));
     }
 
     public void saveQuestion(Question question) {

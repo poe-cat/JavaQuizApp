@@ -2,12 +2,14 @@ package com.poecat.JavaQuizApp.service;
 
 import com.poecat.JavaQuizApp.model.Question;
 import com.poecat.JavaQuizApp.repository.QuestionRepository;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
+@NoArgsConstructor
 public class QuestionForm {
 
     private List<Question> questions;
@@ -26,7 +28,6 @@ public class QuestionForm {
     }
 
     public List<Question> getAllQuestions() {
-        return questionRepository.getAllQuestions().stream()
-                .collect(Collectors.toList());
+        return new ArrayList<>(questionRepository.findAll());
     }
 }

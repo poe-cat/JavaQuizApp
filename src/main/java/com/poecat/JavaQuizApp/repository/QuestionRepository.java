@@ -10,6 +10,6 @@ import java.util.List;
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 
     public Question findById(int id);
-    public List<Question> getAllQuestions();
+    public List<Question> findAll();
 
 }
