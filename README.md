@@ -50,13 +50,9 @@ Alternatively, you can use the Spring Boot Maven plugin:
 
 ## Live 
 
-Application has been deployed to AWS. To see how it works live, go to http://javaquizmysqlaws-env.eba-fudmufn7.eu-central-1.elasticbeanstalk.com .
+Currently unavailable, but app will come back to AWS soon.
 
 ![javaquiz](https://user-images.githubusercontent.com/84228264/177038436-778d4610-e075-4dce-b5d8-5529f0e7bab9.png)
-
-You can register there as a new user or use existing user's credentials: 
-**timi@email.com** for username and 
-**passing123** for password :shipit: .
 
 ## Credits
 <a href="https://www.freepik.com/psd/3d-woman">3d woman psd created by freepik - www.freepik.com</a>
