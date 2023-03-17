@@ -79,7 +79,4 @@ public class MainControllerTest {
 
         return Arrays.asList(result1, result2, result3, result4);
     }
-
-
-
 }
