@@ -8,8 +8,9 @@
 * [Live](#live)
 
 ## General info
-In this app users can test their knowledge of Java basics. After giving your name, the quiz asks you 10 questions. For each only one answer is correct. After submit you'll see your score, you can also check out top scores.
-Additionaly, authenticated users can add their own questions to quiz. User's question will display randomly next time the quiz is taken. 
+This application allows users to test their knowledge of Java basics. Users are required to enter their name, and then answer 10 questions, each with only one correct answer. After submitting their answers, users can view their score and access a leaderboard of top performers.
+
+In addition, authenticated users have the ability to contribute their own questions to the quiz. These user-generated questions will be displayed randomly to other quiz takers.
 
 ## Technologies
 Project is created with:
